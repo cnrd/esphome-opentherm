@@ -833,16 +833,12 @@ INPUTS: Schema[InputSchema] = Schema(
             {
                 "description": "Maximum relative modulation level",
                 "unit_of_measurement": UNIT_PERCENT,
-                "step": 0.1,
+                "step": 1,
                 "icon": "mdi:percent",
                 "message": "MAX_MODULATION_LEVEL",
                 "keep_updated": True,
                 "message_data": "f88",
-                "range": (0, 127),
-                "auto_min_value": {
-                    "message": "MaxCapacityMinModLevel",
-                    "message_data": "u8_lb",
-                },
+                "range": (0, 100),
             }
         ),
     }
